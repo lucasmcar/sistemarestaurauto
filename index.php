@@ -14,7 +14,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/compiled/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/compiled/mystyle.css">
         <title></title>
     </head>
     <body>
@@ -41,7 +42,20 @@
              echo $ex->getMessage() ;
          }
         ?>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <img src="img/c.jpg" class=img>
+
+            <div class="carousel-caption">
+                <h2>Venha conhecer a restaurauto</h2>
+            </div>
+        </div>
+        </div>
         <div class="container">
+         
+
         <form method="POST" action="">
             <div class="form-group">
                 <label for="nome">Nome do Funcionário</label>
@@ -129,7 +143,7 @@
   </div>
 </div>
         
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
