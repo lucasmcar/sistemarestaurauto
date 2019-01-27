@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
     
     function myLoad($className){
@@ -7,7 +5,11 @@
     }
     spl_autoload_register("myLoad");
         
-?>
+?> 
+
+<!DOCTYPE html>
+
+
 
 <html>
     <head>
@@ -112,9 +114,10 @@
               
               <select class="form-control">
                   <?php foreach($func->viewAll() as $key => $v) {?>
-                     <?php echo "<option>" . $v->id_func . "</option>";?>
+                     <option value="<?php echo $v->id_func  ?>"> <?php echo   $v->id_func  ?> </option>
                   <?php }?>
               </select>
+              
               
           </div>
       </div>
@@ -126,8 +129,6 @@
   </div>
 </div>
         
-        
-    </body>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -135,5 +136,7 @@
         $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
         });
-   <script>
+   <script>  
+    </body>
+    
 </html>
